@@ -5,10 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def spiking_time(lmbda):
-    if lmbda <= 1:
-        return
-    else:
-        return -np.log(1 - 1/lmbda)
+    return -np.log(1 - 1/lmbda)
 
 def transfer_function(lmbda):
     return 1 / spiking_time(lmbda)
